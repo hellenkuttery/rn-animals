@@ -8,6 +8,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Image
 } from 'react-native';
 import AnimalGroup from "./components/AnimalGroup"
 
@@ -41,8 +42,8 @@ const animal_type=[
 
 const App = () => {
   return(
-      <View >
-         <Text style={{fontSize:25,fontWeight:"800",alignSelf:"center"}}>ANIMALS</Text>
+      <View>
+         <Image style={{height:300,width:"100%"}} source={require("./components/animals.jpg")}/>
         {
           animal_type.map((animal)=>{
             return(            
